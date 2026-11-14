@@ -20,7 +20,7 @@ This repository holds **installers only**. **The source code is proprietary and 
 2. Pick the newest release and download the file for your system, plus `SHA256SUMS`.
 3. Check the file (below), then run the installer.
 
-No release has been published yet. The first one will appear here when it is ready.
+The current pre-release is [v0.0.1](https://github.com/Amrkz/Nefertiti-releases/releases/tag/v0.0.1). For Windows 10 or 11 (64-bit), download [`Nefertiti_0.0.1_x64-setup.exe`](https://github.com/Amrkz/Nefertiti-releases/releases/download/v0.0.1/Nefertiti_0.0.1_x64-setup.exe) and [`SHA256SUMS`](https://github.com/Amrkz/Nefertiti-releases/releases/download/v0.0.1/SHA256SUMS). This build is unsigned: Windows SmartScreen may warn; click **More info**, then **Run anyway**. macOS and the offline WebView2 installer are not in this pre-release.
 
 ## Check the download (SHA256SUMS)
 
@@ -74,7 +74,7 @@ Questions, problems and feature requests: open an issue in the [Issues](../../is
 2. اختر أحدث إصدار ونزّل الملف المناسب لنظامك، ومعه الملف `SHA256SUMS`.
 3. تحقّق من الملف (انظر أدناه)، ثم شغّل برنامج التثبيت.
 
-لم يُنشر أي إصدار بعد. سيظهر الإصدار الأول هنا عندما يكون جاهزًا.
+الإصدار الحالي التجريبي هو [v0.0.1](https://github.com/Amrkz/Nefertiti-releases/releases/tag/v0.0.1). لنظام ويندوز 10 أو 11 (64 بت) نزّل [`Nefertiti_0.0.1_x64-setup.exe`](https://github.com/Amrkz/Nefertiti-releases/releases/download/v0.0.1/Nefertiti_0.0.1_x64-setup.exe) و[`SHA256SUMS`](https://github.com/Amrkz/Nefertiti-releases/releases/download/v0.0.1/SHA256SUMS). هذا البناء غير موقّع: قد يحذّر Windows SmartScreen؛ اضغط **More info** ثم **Run anyway**. ملفا ماك ومثبت WebView2 دون اتصال ليسا ضمن هذا الإصدار التجريبي.
 
 ### التحقق من الملف (SHA256SUMS)
 
