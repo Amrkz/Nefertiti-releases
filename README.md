@@ -6,6 +6,10 @@ Nefertiti is a desktop DICOM viewer for CT, MRI and X-ray images, made for priva
 
 This repository holds **installers only**. **The source code is proprietary and not published.**
 
+## Website
+
+A full project site, in English and Arabic, is in this repository and will be served at [https://amrkz.github.io/Nefertiti-releases/](https://amrkz.github.io/Nefertiti-releases/) after GitHub Pages is enabled (Settings → Pages → Deploy from branch `main`, folder `/docs`).
+
 ## Supported systems
 
 | System | File |
@@ -44,7 +48,7 @@ It prints `OK` next to each file that matches. If a file does not match, delete 
 
 ## Licence
 
-Copyright (c) 2026 Amr Qazzaz. All rights reserved. Nefertiti is proprietary software. See [LICENSE](LICENSE). Third-party components bundled with the app keep their own licences; see [NOTICE](NOTICE).
+Copyright (c) 2026 Amr Kazzaz. All rights reserved. Nefertiti is proprietary software. See [LICENSE](LICENSE). Third-party components bundled with the app keep their own licences; see [NOTICE](NOTICE).
 
 ## Contact
 
@@ -61,6 +65,10 @@ Questions, problems and feature requests: open an issue in the [Issues](../../is
 > **للاستئناس فقط، وليس للتشخيص.** نفرتيتي ليس جهازًا طبيًا، ولم يُعتمد أو يُسجَّل لدى أي جهة تنظيمية (بما في ذلك هيئة الدواء المصرية والهيئة العامة للغذاء والدواء السعودية).
 
 يحتوي هذا المستودع على **ملفات التثبيت فقط**. **الشيفرة المصدرية مملوكة وغير منشورة.**
+
+### الموقع
+
+موقع المشروع الكامل، بالإنجليزية والعربية، موجود في هذا المستودع وسيُنشر على [https://amrkz.github.io/Nefertiti-releases/](https://amrkz.github.io/Nefertiti-releases/) بعد تفعيل GitHub Pages (Settings → Pages → Deploy from branch `main`، والمجلد `/docs`). النسخة العربية: [https://amrkz.github.io/Nefertiti-releases/ar.html](https://amrkz.github.io/Nefertiti-releases/ar.html).
 
 ### الأنظمة المدعومة
 
@@ -87,7 +95,7 @@ Questions, problems and feature requests: open an issue in the [Issues](../../is
 
 ### الترخيص
 
-حقوق النشر (c) 2026 عمرو قزاز. جميع الحقوق محفوظة. نفرتيتي برنامج مملوك؛ انظر [LICENSE](LICENSE). مكوّنات الأطراف الثالثة المضمّنة تبقى برخصها؛ انظر [NOTICE](NOTICE).
+حقوق النشر (c) 2026 عمرو كزاز. جميع الحقوق محفوظة. نفرتيتي برنامج مملوك؛ انظر [LICENSE](LICENSE). مكوّنات الأطراف الثالثة المضمّنة تبقى برخصها؛ انظر [NOTICE](NOTICE).
 
 ### التواصل
 
