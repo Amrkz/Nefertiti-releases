@@ -8,7 +8,7 @@ This repository holds **installers only**. **The source code is proprietary and 
 
 ## Website
 
-A full project site, in English and Arabic, is in this repository and will be served at [https://amrkz.github.io/Nefertiti-releases/](https://amrkz.github.io/Nefertiti-releases/) after GitHub Pages is enabled (Settings → Pages → Deploy from branch `main`, folder `/docs`).
+The project site, in English and Arabic, is at [https://amrkz.github.io/Nefertiti-releases/](https://amrkz.github.io/Nefertiti-releases/). Arabic: [https://amrkz.github.io/Nefertiti-releases/ar.html](https://amrkz.github.io/Nefertiti-releases/ar.html).
 
 ## Supported systems
 
@@ -68,7 +68,7 @@ Questions, problems and feature requests: open an issue in the [Issues](../../is
 
 ### الموقع
 
-موقع المشروع الكامل، بالإنجليزية والعربية، موجود في هذا المستودع وسيُنشر على [https://amrkz.github.io/Nefertiti-releases/](https://amrkz.github.io/Nefertiti-releases/) بعد تفعيل GitHub Pages (Settings → Pages → Deploy from branch `main`، والمجلد `/docs`). النسخة العربية: [https://amrkz.github.io/Nefertiti-releases/ar.html](https://amrkz.github.io/Nefertiti-releases/ar.html).
+موقع المشروع، بالإنجليزية والعربية: [https://amrkz.github.io/Nefertiti-releases/](https://amrkz.github.io/Nefertiti-releases/). النسخة العربية: [https://amrkz.github.io/Nefertiti-releases/ar.html](https://amrkz.github.io/Nefertiti-releases/ar.html).
 
 ### الأنظمة المدعومة
 

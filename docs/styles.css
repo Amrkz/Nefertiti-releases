@@ -187,24 +187,52 @@ ul.clean li, ol li { margin: 0.25rem 0; }
 
 .shots {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 1.25rem;
 }
 .shot {
-  aspect-ratio: 16 / 10;
-  border: 1px dashed #c8b894;
+  margin: 0;
+  background: var(--paper);
+  border: 1px solid #e4d9c0;
   border-radius: 10px;
-  background:
-    repeating-linear-gradient(-45deg, #f3eee3, #f3eee3 10px, #efe8d8 10px, #efe8d8 20px);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 1rem;
+  overflow: hidden;
+  box-shadow: 0 1px 0 rgba(14, 26, 43, 0.04);
+}
+.shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: top;
+  background: #0e1a2b;
+}
+.shot figcaption {
+  padding: 0.7rem 0.9rem 0.85rem;
+  font-size: 0.92rem;
   color: var(--muted);
 }
-.shot strong { color: var(--navy-2); display: block; margin-bottom: 0.25rem; }
+.shot figcaption strong {
+  color: var(--navy-2);
+  display: block;
+  margin-bottom: 0.2rem;
+  font-size: 1rem;
+}
+
+.download-actions {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  margin: 1rem 0 1.2rem;
+}
+.download-actions .btn-ghost {
+  color: var(--navy-2);
+  border-color: var(--gold-dark);
+}
+.download-actions .btn-ghost:hover {
+  background: rgba(198, 163, 90, 0.12);
+  color: var(--navy);
+}
 
 table {
   width: 100%;
