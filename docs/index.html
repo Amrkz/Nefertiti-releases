@@ -6,177 +6,197 @@
   <title>Nefertiti — desktop DICOM viewer for private clinics</title>
   <meta name="description" content="Nefertiti is a desktop DICOM viewer for CT, MRI and X-ray images, made for private specialist clinics. For reference only, not for diagnosis. Created by Dr Amr Kazzaz.">
   <meta name="author" content="Dr Amr Kazzaz">
+  <link rel="preload" href="fonts/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/nwpStKy2OAdR1K-IwhWudF-R3w8aZQ.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="alternate" hreflang="ar" href="ar.html">
   <link rel="alternate" hreflang="en" href="index.html">
+  <link rel="canonical" href="https://amrkz.github.io/Nefertiti-releases/">
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
-  <header class="site">
-    <div class="bar">
-      <a class="wordmark" href="index.html">Nefertiti <span>Viewer</span></a>
-      <nav class="menu" aria-label="Page sections">
+  <header class="masthead">
+    <div class="masthead__in">
+      <a class="wordmark" href="index.html">Nefertiti</a>
+      <button class="burger" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+      <nav class="nav" id="nav" aria-label="Page sections">
         <a href="#about">About</a>
         <a href="#features">Features</a>
         <a href="#screenshots">Screenshots</a>
         <a href="#download">Download</a>
-        <a href="#requirements">Requirements</a>
-        <a href="#roadmap">Roadmap</a>
-        <a href="#privacy">Privacy</a>
-        <a href="#licence">Licence</a>
         <a href="#faq">FAQ</a>
-        <a href="#credits">Credits</a>
         <a href="#contact">Contact</a>
+        <a class="lang" href="ar.html" lang="ar" hreflang="ar">العربية</a>
       </nav>
-      <a class="lang" href="ar.html" lang="ar" hreflang="ar">العربية</a>
     </div>
   </header>
 
-  <div class="hero">
-    <div class="inner">
-      <p class="kicker">Desktop DICOM viewer</p>
-      <h1>Nefertiti</h1>
-      <p class="tagline">A desktop DICOM viewer for CT, MRI and X-ray images, made for private specialist clinics.</p>
-      <p class="credit-hero">Created by Dr Amr Kazzaz</p>
-      <div class="disclaimer">
-        For reference only, not for diagnosis.
-        <p>Nefertiti is not a medical device and has not been cleared or registered by any regulator, including the EDA in Egypt or the SFDA in Saudi Arabia. Clinical decisions must be made with approved systems and by qualified people.</p>
-      </div>
-      <div class="hero-actions">
-        <a class="btn btn-gold" href="https://github.com/Amrkz/Nefertiti-releases/releases/download/v0.0.1/Nefertiti_0.0.1_x64-setup.exe">Download for Windows</a>
-        <a class="btn btn-ghost" href="https://github.com/Amrkz/Nefertiti-releases/releases/tag/v0.0.1">Release page</a>
-      </div>
-    </div>
-  </div>
-
   <main id="main">
-    <section id="about">
-      <h2>What it is</h2>
-      <p class="lead">Surgeons and specialists in private clinics — including orthopaedics and neurosurgery in Egypt and Saudi Arabia — often receive patient imaging on CDs and USB drives from radiology centres. They want to open those studies, look at them, measure, compare visits, and keep a private copy. Nefertiti is built for that desk.</p>
-      <p>It opens the CD or USB a patient brings, keeps a private encrypted library on the computer, and lets you view, measure and compare studies. It works offline: no network calls, no telemetry, no analytics and no update check. The original images are never changed; measurements and notes are stored with the study.</p>
-      <p>This repository holds <strong>installers only</strong>. The source code is proprietary and is not published. Nefertiti is an independent project. It does not contain Horos or OsiriX code, and it is not affiliated with either project.</p>
+    <section class="hero">
+      <p class="kicker">Desktop DICOM viewer</p>
+      <h1 class="hero__sig">A DICOM viewer for the <em>private clinic</em>.</h1>
+      <p class="hero__sub">Opens CT, MRI and X-ray from a CD, USB, folder or ZIP — fully offline.</p>
+      <p class="hero__claim">Surgeons and specialists often receive patient imaging on a disc they cannot open. Nefertiti is built for that desk: view, measure, compare visits, and keep a private copy. Created by Dr Amr Kazzaz.</p>
+      <p class="hero__note"><strong>For reference only, not for diagnosis.</strong> Nefertiti is not a medical device and has not been cleared or registered by any regulator, including the EDA in Egypt or the SFDA in Saudi Arabia. Clinical decisions must be made with approved systems and by qualified people.</p>
+      <div class="hero__actions">
+        <a class="btn" href="https://github.com/Amrkz/Nefertiti-releases/releases/download/v0.0.1/Nefertiti_0.0.1_x64-setup.exe">Download for Windows</a>
+        <a class="btn btn--ghost" href="https://github.com/Amrkz/Nefertiti-releases/releases/tag/v0.0.1">Release page</a>
+      </div>
     </section>
 
-    <section id="features">
-      <h2>Features</h2>
-      <p>A short tour of what the app can do. Every measurement carries the sentence “for reference only, not for diagnosis”.</p>
+    <section class="bande" id="about">
+      <h2 class="section-titre">What it is</h2>
+      <p class="lede">A desktop viewer for the CD or USB a patient brings to a private specialist clinic — including orthopaedics and neurosurgery in Egypt and Saudi Arabia.</p>
+      <div class="prose">
+        <p>It opens the study, keeps a private encrypted library on the computer, and lets you view, measure and compare studies. It works offline: no network calls, no telemetry, no analytics and no update check. The original images are never changed; measurements and notes are stored with the study.</p>
+        <p>This site holds <strong>installers only</strong>. The source code is proprietary and is not published. Nefertiti is an independent project. It does not contain Horos or OsiriX code, and it is not affiliated with either project.</p>
+      </div>
+    </section>
 
-      <div class="grid">
-        <article class="card" id="viewing">
-          <h3>Viewing</h3>
-          <ul>
-            <li>Open DICOM studies from a disc, USB stick or folder (DICOMDIR when present, otherwise a scan of loose files). You can also drop a folder on the window or use the system’s Open With.</li>
-            <li>Window and level, including right-drag and the <kbd>W</kbd> key, with presets.</li>
-            <li>Zoom, pan and reset the view (measurements stay).</li>
-            <li>Rotate right, flip horizontal and flip vertical.</li>
-            <li>Scroll through a stack with the mouse wheel or the keyboard; play or pause cine on a multi-frame series.</li>
-            <li>Present mode shows the picture alone and hides names. Full screen is also available.</li>
-            <li>A command palette (<kbd>Ctrl</kbd>+<kbd>K</kbd>) lists commands by name. A short right-click opens a ring of choices.</li>
-          </ul>
+    <section class="bande band--paper-high" id="features">
+      <h2 class="section-titre">Features</h2>
+      <p class="intro">A short tour of what the app can do. Every measurement carries the sentence “for reference only, not for diagnosis”.</p>
+
+      <div class="comps">
+        <article class="comp" id="viewing">
+          <h3 class="comp__t">Viewing</h3>
+          <div class="comp__c">
+            <ul>
+              <li>Open DICOM studies from a disc, USB stick or folder (DICOMDIR when present, otherwise a scan of loose files). You can also drop a folder on the window or use the system’s Open With.</li>
+              <li>Window and level, including right-drag and the <kbd>W</kbd> key, with presets.</li>
+              <li>Zoom, pan and reset the view (measurements stay).</li>
+              <li>Rotate right, flip horizontal and flip vertical.</li>
+              <li>Scroll through a stack with the mouse wheel or the keyboard; play or pause cine on a multi-frame series.</li>
+              <li>Present mode shows the picture alone and hides names. Full screen is also available.</li>
+              <li>A command palette (<kbd>Ctrl</kbd>+<kbd>K</kbd>) lists commands by name. A short right-click opens a ring of choices.</li>
+            </ul>
+          </div>
         </article>
 
-        <article class="card" id="layouts">
-          <h3>Layouts, compare and follow-up</h3>
-          <ul>
-            <li>One, two or four images on screen (<kbd>1</kbd>, <kbd>2</kbd>, <kbd>4</kbd>).</li>
-            <li>Compare places two images side by side (1×2). Link scroll starts off; turn it on to move both. Shift-click marks the same spot on the other image.</li>
-            <li>Follow-up compare: open a patient, then choose two dated studies under Studies by date to compare an older visit with a newer one.</li>
-            <li>Mark or unmark a key image (<kbd>I</kbd>).</li>
-          </ul>
+        <article class="comp" id="layouts">
+          <h3 class="comp__t">Layouts, compare and follow-up</h3>
+          <div class="comp__c">
+            <ul>
+              <li>One, two or four images on screen (<kbd>1</kbd>, <kbd>2</kbd>, <kbd>4</kbd>).</li>
+              <li>Compare places two images side by side (1×2). Link scroll starts off; turn it on to move both. Shift-click marks the same spot on the other image.</li>
+              <li>Follow-up compare: open a patient, then choose two dated studies under Studies by date to compare an older visit with a newer one.</li>
+              <li>Mark or unmark a key image (<kbd>I</kbd>).</li>
+            </ul>
+          </div>
         </article>
 
-        <article class="card" id="measurements">
-          <h3>Measurements</h3>
-          <ul>
-            <li>Length, angle, Cobb angle, ellipse area, annotations, and a Calibrate tool.</li>
-            <li>Calibration is always stated. If the image has no usable scale, the length is shown in pixels as Uncalibrated — never as millimetres invented by the app.</li>
-            <li>On a plain X-ray the scale may be magnified, and the words “May be magnified” say so. Calibrate lets you set the scale from an object of known size.</li>
-            <li>A Cobb angle is the smaller angle, 0 to 90 degrees.</li>
-            <li>Measurements are as exact as the scan and the scale allow. They are for reference only, not for diagnosis, and are not for planning, sizing or choosing an implant or an operation.</li>
-          </ul>
+        <article class="comp" id="measurements">
+          <h3 class="comp__t">Measurements</h3>
+          <div class="comp__c">
+            <ul>
+              <li>Length, angle, Cobb angle, ellipse area, annotations, and a Calibrate tool.</li>
+              <li>Calibration is always stated. If the image has no usable scale, the length is shown in pixels as Uncalibrated — never as millimetres invented by the app.</li>
+              <li>On a plain X-ray the scale may be magnified, and the words “May be magnified” say so. Calibrate lets you set the scale from an object of known size.</li>
+              <li>A Cobb angle is the smaller angle, 0 to 90 degrees.</li>
+              <li>Measurements are as exact as the scan and the scale allow. They are for reference only, not for diagnosis, and are not for planning, sizing or choosing an implant or an operation.</li>
+            </ul>
+          </div>
         </article>
 
-        <article class="card" id="mpr">
-          <h3>Multiplanar views (MPR)</h3>
-          <ul>
-            <li>For a CT that can be a volume, View → MPR shows Axial, Coronal and Sagittal planes and a Volume pane.</li>
-            <li>One slanted (oblique) plane is available in the Volume pane: Turn spins it (−180 to 180 degrees), Slant tips it (up to 80 degrees either way), and Square puts it back on the axial plane. There is no curved plane.</li>
-            <li>A length or angle on a plane is the patient-space distance, in millimetres or degrees.</li>
-            <li>A tilted stack, or slices that are not evenly spaced, is not offered for planes; the 2D images still work. Many head CTs are like this.</li>
-            <li>Planes also need WebGL2. If this computer cannot create a volume view, the 2D stack remains available.</li>
-            <li>Nefertiti reconstructs 2D slices, orthogonal planes and a 3D view from a series that is already a stack of images. It does not reconstruct raw scanner data.</li>
-          </ul>
+        <article class="comp" id="mpr">
+          <h3 class="comp__t">Multiplanar views (MPR)</h3>
+          <div class="comp__c">
+            <ul>
+              <li>For a CT that can be a volume, View → MPR shows Axial, Coronal and Sagittal planes and a Volume pane.</li>
+              <li>One slanted (oblique) plane is available in the Volume pane: Turn spins it (−180 to 180 degrees), Slant tips it (up to 80 degrees either way), and Square puts it back on the axial plane. There is no curved plane.</li>
+              <li>A length or angle on a plane is the patient-space distance, in millimetres or degrees.</li>
+              <li>A tilted stack, or slices that are not evenly spaced, is not offered for planes; the 2D images still work. Many head CTs are like this.</li>
+              <li>Planes also need WebGL2. If this computer cannot create a volume view, the 2D stack remains available.</li>
+              <li>Nefertiti reconstructs 2D slices, orthogonal planes and a 3D view from a series that is already a stack of images. It does not reconstruct raw scanner data.</li>
+            </ul>
+          </div>
         </article>
 
-        <article class="card" id="model3d">
-          <h3>3D bone model</h3>
-          <ul>
-            <li>A bone surface can be built from a CT (not from MRI), after you choose a starting point and press Build model. Nothing is built until you ask.</li>
-            <li>The only numbers on the model are a <strong>distance</strong>, an <strong>angle</strong>, and the <strong>size of a piece’s box</strong> (length × width × height). It does not show the volume of a bone or of a piece.</li>
-            <li>Pieces can be shown, hidden, joined, removed, recoloured or split by two clicks. Points are clicked by hand; there is no automatic landmark and no AI.</li>
-            <li>A very large CT builds at lower detail only when you press Build at lower detail. Tilted CTs are not supported yet for the model; the 2D images still work.</li>
-            <li>View → 3D only shows the model alone. The planes are hidden, not closed.</li>
-            <li>Visible pieces can be saved as one STL file, only on your click. The file is not password-protected, carries no patient name, id or date, and is not a surgical plan, template or guide. A regulatory read of this export is still needed before 0.1.0 ships that button.</li>
-          </ul>
+        <article class="comp" id="model3d">
+          <h3 class="comp__t">3D bone model</h3>
+          <div class="comp__c">
+            <ul>
+              <li>A bone surface can be built from a CT (not from MRI), after you choose a starting point and press Build model. Nothing is built until you ask.</li>
+              <li>The only numbers on the model are a <strong>distance</strong>, an <strong>angle</strong>, and the <strong>size of a piece’s box</strong> (length × width × height). It does not show the volume of a bone or of a piece.</li>
+              <li>Pieces can be shown, hidden, joined, removed, recoloured or split by two clicks. Points are clicked by hand; there is no automatic landmark and no AI.</li>
+              <li>A very large CT builds at lower detail only when you press Build at lower detail. Tilted CTs are not supported yet for the model; the 2D images still work.</li>
+              <li>View → 3D only shows the model alone. The planes are hidden, not closed.</li>
+              <li>Visible pieces can be saved as one STL file, only on your click. The file is not password-protected, carries no patient name, id or date, and is not a surgical plan, template or guide. A regulatory read of this export is still needed before 0.1.0 ships that button.</li>
+            </ul>
+          </div>
         </article>
 
-        <article class="card" id="library">
-          <h3>Private library</h3>
-          <ul>
-            <li>A searchable local library: patient name, ID, date and modality. Names in Arabic and in Latin letters both work.</li>
-            <li>Studies can be sorted, opened, annotated and deleted. A disc’s SETUP.EXE or autorun.inf is never run. A study imported twice appears once.</li>
-            <li>The library is encrypted on disk. The key is held by the Windows account or the Mac Keychain. By default there is no app password.</li>
-            <li>On first start you save a recovery key on paper. It is the only way back in if the key file is lost or a PIN is forgotten.</li>
-            <li>Back up to a folder or USB stick, check a backup, and restore. A restore replaces the library on that computer. The backup holds only encrypted files.</li>
-          </ul>
+        <article class="comp" id="library">
+          <h3 class="comp__t">Private library</h3>
+          <div class="comp__c">
+            <ul>
+              <li>A searchable local library: patient name, ID, date and modality. Names in Arabic and in Latin letters both work.</li>
+              <li>Studies can be sorted, opened, annotated and deleted. A disc’s SETUP.EXE or autorun.inf is never run. A study imported twice appears once.</li>
+              <li>The library is encrypted on disk. The key is held by the Windows account or the Mac Keychain. By default there is no app password.</li>
+              <li>On first start you save a recovery key on paper. It is the only way back in if the key file is lost or a PIN is forgotten.</li>
+              <li>Back up to a folder or USB stick, check a backup, and restore. A restore replaces the library on that computer. The backup holds only encrypted files.</li>
+            </ul>
+          </div>
         </article>
 
-        <article class="card" id="share">
-          <h3>Sharing, export, PDF and key images</h3>
-          <ul>
-            <li><strong>Export</strong> can write an original DICOM copy, a de-identified copy, or a password-protected ZIP, only to the folder you choose.</li>
-            <li>The de-identified copy follows the DICOM Basic Profile for tags it can change. Study dates stay. Text burned into the pictures is not removed; the app asks you to confirm that you looked.</li>
-            <li><strong>Save picture</strong> writes the image with its measurements and the calibration line. Including the patient name is off unless you tick it.</li>
-            <li><strong>Share</strong> can make a PDF of a study, a key-image page, a scroll-through video or a picture grid. Shared files are anonymized by default and carry “For reference only, not for diagnosis”.</li>
-            <li>You can also print a page. Files are written only where you choose; nothing is left in a temporary folder.</li>
-          </ul>
+        <article class="comp" id="share">
+          <h3 class="comp__t">Sharing, export, PDF and key images</h3>
+          <div class="comp__c">
+            <ul>
+              <li><strong>Export</strong> can write an original DICOM copy, a de-identified copy, or a password-protected ZIP, only to the folder you choose.</li>
+              <li>The de-identified copy follows the DICOM Basic Profile for tags it can change. Study dates stay. Text burned into the pictures is not removed; the app asks you to confirm that you looked.</li>
+              <li><strong>Save picture</strong> writes the image with its measurements and the calibration line. Including the patient name is off unless you tick it.</li>
+              <li><strong>Share</strong> can make a PDF of a study, a key-image page, a scroll-through video or a picture grid. Shared files are anonymized by default and carry “For reference only, not for diagnosis”.</li>
+              <li>You can also print a page. Files are written only where you choose; nothing is left in a temporary folder.</li>
+            </ul>
+          </div>
         </article>
 
-        <article class="card" id="lock">
-          <h3>Privacy, encryption and optional PIN</h3>
-          <ul>
-            <li>Works fully offline. No cloud, no accounts, no sync, no PACS connection, and no network calls in the app.</li>
-            <li>An optional PIN can be turned on in Settings → Security. With a PIN, a Lock button appears, and the library can lock itself after 5, 10 (the default), 15 or 30 idle minutes, or never. Idle lock waits for a running import or backup, and pauses in Present mode.</li>
-            <li>A PIN is walk-up protection only. It does not stop a program running as the signed-in user. Keep the operating system’s screen lock (and BitLocker on Windows) on as well.</li>
-            <li>Easy PINs such as 123456 are refused. After five wrong tries the app makes you wait. A forgotten PIN needs the recovery key; without it the library cannot be opened.</li>
-            <li>A problem report (Settings → Help) copies the version, the system and recent error codes. It holds no names, ids or file paths, and nothing is sent anywhere.</li>
-          </ul>
+        <article class="comp" id="lock">
+          <h3 class="comp__t">Privacy, encryption and optional PIN</h3>
+          <div class="comp__c">
+            <ul>
+              <li>Works fully offline. No cloud, no accounts, no sync, no PACS connection, and no network calls in the app.</li>
+              <li>An optional PIN can be turned on in Settings → Security. With a PIN, a Lock button appears, and the library can lock itself after 5, 10 (the default), 15 or 30 idle minutes, or never. Idle lock waits for a running import or backup, and pauses in Present mode.</li>
+              <li>A PIN is walk-up protection only. It does not stop a program running as the signed-in user. Keep the operating system’s screen lock (and BitLocker on Windows) on as well.</li>
+              <li>Easy PINs such as 123456 are refused. After five wrong tries the app makes you wait. A forgotten PIN needs the recovery key; without it the library cannot be opened.</li>
+              <li>A problem report (Settings → Help) copies the version, the system and recent error codes. It holds no names, ids or file paths, and nothing is sent anywhere.</li>
+            </ul>
+          </div>
         </article>
 
-        <article class="card" id="arabic">
-          <h3>English and Arabic</h3>
-          <ul>
-            <li>The interface is available in English and Arabic. The language choice is remembered across restarts.</li>
-            <li>In Arabic the page layout is mirrored. Medical images, viewports, planes, the 3D model and on-image overlays stay left to right, so the patient’s left stays on the same side of the screen.</li>
-            <li>The Arabic text is a machine draft and still needs review by a native speaker. Some buttons may still appear in English.</li>
-          </ul>
+        <article class="comp" id="arabic">
+          <h3 class="comp__t">English and Arabic</h3>
+          <div class="comp__c">
+            <ul>
+              <li>The interface is available in English and Arabic. The language choice is remembered across restarts.</li>
+              <li>In Arabic the page layout is mirrored. Medical images, viewports, planes, the 3D model and on-image overlays stay left to right, so the patient’s left stays on the same side of the screen.</li>
+              <li>The Arabic text is a machine draft and still needs review by a native speaker. Some buttons may still appear in English.</li>
+            </ul>
+          </div>
         </article>
 
-        <article class="card" id="platforms">
-          <h3>Platforms</h3>
-          <ul>
-            <li><strong>Windows 10 or 11, 64-bit (x64)</strong> <span class="status status-now">Pre-release</span> — a one-click installer. If Microsoft WebView2 is missing, the usual installer can download it (that step needs a network). An offline installer that includes WebView2 is planned, but is not in the current pre-release.</li>
-            <li><strong>macOS on an Intel Mac</strong> <span class="status status-soon">Planned for 0.1.0</span> — a disk image is planned. It is not included in the v0.0.1 pre-release.</li>
-            <li><strong>iPad</strong> <span class="status status-dev">In development</span> — an iPad version is being built. It is not part of the public release on this site yet, and the iPad target is not on the main product line as released here.</li>
-            <li>Linux installers and ARM Windows builds are not in 0.1.0.</li>
-          </ul>
+        <article class="comp" id="platforms">
+          <h3 class="comp__t">Platforms</h3>
+          <div class="comp__c">
+            <ul>
+              <li><strong>Windows 10 or 11, 64-bit (x64)</strong> <span class="status status-now">Pre-release</span> — a one-click installer. If Microsoft WebView2 is missing, the usual installer can download it (that step needs a network). An offline installer that includes WebView2 is planned, but is not in the current pre-release.</li>
+              <li><strong>macOS on an Intel Mac</strong> <span class="status status-soon">Planned for 0.1.0</span> — a disk image is planned. It is not included in the v0.0.1 pre-release.</li>
+              <li><strong>iPad</strong> <span class="status status-dev">In development</span> — an iPad version is being built. It is not part of the public release on this site yet, and the iPad target is not on the main product line as released here.</li>
+              <li>Linux installers and ARM Windows builds are not in 0.1.0.</li>
+            </ul>
+          </div>
         </article>
       </div>
     </section>
 
-    <section id="screenshots">
-      <h2>Screenshots</h2>
+    <section class="photo" aria-label="Intended use">
+      <p class="photo__q">For reference only, not for diagnosis.</p>
+    </section>
+
+    <section class="bande" id="screenshots">
+      <h2 class="section-titre">Screenshots</h2>
       <p class="note">These pictures were taken from a synthetic phantom only. <strong>No patient images are shown on this site.</strong></p>
       <div class="shots">
         <figure class="shot">
@@ -198,17 +218,17 @@
       </div>
     </section>
 
-    <section id="download">
-      <h2>Download</h2>
+    <section class="bande band--paper-high" id="download">
+      <h2 class="section-titre">Download</h2>
       <p>Installers are published on the <a href="https://github.com/Amrkz/Nefertiti-releases/releases">Releases</a> page of this repository. Always download the installer and <code>SHA256SUMS</code> from that page, then check the checksum before you run the file.</p>
       <p class="download-actions">
-        <a class="btn btn-gold" href="https://github.com/Amrkz/Nefertiti-releases/releases/download/v0.0.1/Nefertiti_0.0.1_x64-setup.exe">Download Nefertiti_0.0.1_x64-setup.exe</a>
-        <a class="btn btn-ghost" href="https://github.com/Amrkz/Nefertiti-releases/releases/tag/v0.0.1">Open the v0.0.1 release page</a>
+        <a class="btn" href="https://github.com/Amrkz/Nefertiti-releases/releases/download/v0.0.1/Nefertiti_0.0.1_x64-setup.exe">Download for Windows</a>
+        <a class="btn btn--ghost" href="https://github.com/Amrkz/Nefertiti-releases/releases/tag/v0.0.1">Open the v0.0.1 release page</a>
       </p>
       <p>The current pre-release is <a href="https://github.com/Amrkz/Nefertiti-releases/releases/tag/v0.0.1">v0.0.1</a>, an unsigned Windows installer: <a href="https://github.com/Amrkz/Nefertiti-releases/releases/download/v0.0.1/Nefertiti_0.0.1_x64-setup.exe">Nefertiti_0.0.1_x64-setup.exe</a> and <a href="https://github.com/Amrkz/Nefertiti-releases/releases/download/v0.0.1/SHA256SUMS">SHA256SUMS</a>. Windows SmartScreen may warn because the build is unsigned; choose <strong>More info</strong>, then <strong>Run anyway</strong>. macOS and the offline WebView2 installer are not in this pre-release.</p>
       <p><strong>Version 0.1.0</strong>, the first signed public release, is not published yet. See <a href="#roadmap">the roadmap</a> for what still has to happen first.</p>
 
-      <h3>Check the download (SHA256SUMS)</h3>
+      <h3 class="sub-titre">Check the download (SHA256SUMS)</h3>
       <p><code>SHA256SUMS</code> lists one SHA-256 checksum per installer. The checksum of your file must match its line exactly. If it does not, delete the file and download it again. Do not run it.</p>
       <p><strong>Windows (PowerShell):</strong></p>
       <pre><code>Get-FileHash .\Nefertiti_0.0.1_x64-setup.exe -Algorithm SHA256</code></pre>
@@ -218,36 +238,38 @@
       <p>It prints <code>OK</code> next to each file that matches.</p>
     </section>
 
-    <section id="requirements">
-      <h2>System requirements</h2>
-      <table>
-        <thead>
-          <tr><th>System</th><th>Installer</th><th>Status</th></tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Windows 10 or 11, 64-bit (x64)</td>
-            <td><code>Nefertiti_&lt;version&gt;_x64-setup.exe</code> (downloads Microsoft WebView2 during install if it is missing)</td>
-            <td>v0.0.1 pre-release available, unsigned</td>
-          </tr>
-          <tr>
-            <td>Windows 10 or 11, 64-bit, no network</td>
-            <td><code>Nefertiti_&lt;version&gt;_x64-offline-webview2-setup.exe</code> (includes the WebView2 installer)</td>
-            <td>Not in the current pre-release</td>
-          </tr>
-          <tr>
-            <td>macOS on an Intel Mac</td>
-            <td><code>Nefertiti_&lt;version&gt;_x64.dmg</code></td>
-            <td>Planned for 0.1.0; not in the current pre-release</td>
-          </tr>
-        </tbody>
-      </table>
+    <section class="bande" id="requirements">
+      <h2 class="section-titre">System requirements</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>System</th><th>Installer</th><th>Status</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Windows 10 or 11, 64-bit (x64)</td>
+              <td><code>Nefertiti_&lt;version&gt;_x64-setup.exe</code> (downloads Microsoft WebView2 during install if it is missing)</td>
+              <td>v0.0.1 pre-release available, unsigned</td>
+            </tr>
+            <tr>
+              <td>Windows 10 or 11, 64-bit, no network</td>
+              <td><code>Nefertiti_&lt;version&gt;_x64-offline-webview2-setup.exe</code> (includes the WebView2 installer)</td>
+              <td>Not in the current pre-release</td>
+            </tr>
+            <tr>
+              <td>macOS on an Intel Mac</td>
+              <td><code>Nefertiti_&lt;version&gt;_x64.dmg</code></td>
+              <td>Planned for 0.1.0; not in the current pre-release</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
       <p>Window/level and 2D viewing use the installer above. Multiplanar and 3D views need WebGL2 graphics support; without it, the 2D stack still works. Removing the app keeps your library unless you delete the data on purpose.</p>
     </section>
 
-    <section id="roadmap">
-      <h2>Roadmap</h2>
-      <h3>Towards 0.1.0</h3>
+    <section class="bande band--paper-high" id="roadmap">
+      <h2 class="section-titre">Roadmap</h2>
+      <h3 class="sub-titre">Towards 0.1.0</h3>
       <p>0.1.0 is the first signed public release. It is not out yet. Work that still stands in front of it includes:</p>
       <ul class="clean">
         <li>Finishing and checking the 3D bone model (including hand checks on the intended PCs).</li>
@@ -256,31 +278,35 @@
         <li>A regulatory read of the Export STL button before 0.1.0 ships that button.</li>
       </ul>
       <p>A native-speaker review of the Arabic wording is also still needed. A lawyer’s review of the licence wording, and a check with the EDA and the SFDA, should be done before any sale or clinical claim, and before wide use in Egypt or Saudi Arabia.</p>
-      <h3>Later, after 0.1.0</h3>
+      <h3 class="sub-titre">Later, after 0.1.0</h3>
       <ul class="clean">
         <li>A clinic-network edition (an optional local network mode) is planned only after 0.1.0 is in real use. It would stay off until turned on.</li>
         <li>There is no AI finding in the app today. Any later AI add-on would stay off by default and would need a regulatory review first. Reporting, cloud hosting of patient data, and image acquisition are not goals of this product.</li>
       </ul>
     </section>
 
-    <section id="privacy">
-      <h2>Privacy</h2>
-      <p>Patient data is meant to stay on the computer (and on a USB backup you make). The app works fully offline. It makes no network call and has no telemetry, analytics or update check. There is no account and no cloud.</p>
-      <p>The library is encrypted on disk. Plaintext images exist in memory only while the library is unlocked. Nothing decrypted is written to disk except when you explicitly export, share, print or save a picture — and then only to the folder, file or printer you pick.</p>
-      <p>Share is anonymized by default: name, ID, birth date and accession appear only when “Include patient details” is ticked, and that choice is never remembered. File names and file metadata never carry patient or study data. Images that may show patient details in their pixels start unticked; the app cannot find names written in pixels.</p>
-      <p>A problem report holds no names, ids or file paths, and nothing is sent anywhere. This site does not use third-party trackers or analytics.</p>
-      <p class="muted">These notes describe what the software is designed to do. They are not legal advice. Clinics are likely the data controllers under applicable privacy law and should check their own obligations, including Egypt’s Personal Data Protection Law and Saudi Arabia’s PDPL.</p>
+    <section class="bande" id="privacy">
+      <h2 class="section-titre">Privacy</h2>
+      <div class="prose">
+        <p>Patient data is meant to stay on the computer (and on a USB backup you make). The app works fully offline. It makes no network call and has no telemetry, analytics or update check. There is no account and no cloud.</p>
+        <p>The library is encrypted on disk. Plaintext images exist in memory only while the library is unlocked. Nothing decrypted is written to disk except when you explicitly export, share, print or save a picture — and then only to the folder, file or printer you pick.</p>
+        <p>Share is anonymized by default: name, ID, birth date and accession appear only when “Include patient details” is ticked, and that choice is never remembered. File names and file metadata never carry patient or study data. Images that may show patient details in their pixels start unticked; the app cannot find names written in pixels.</p>
+        <p>A problem report holds no names, ids or file paths, and nothing is sent anywhere. This site does not use third-party trackers or analytics.</p>
+        <p class="muted">These notes describe what the software is designed to do. They are not legal advice. Clinics are likely the data controllers under applicable privacy law and should check their own obligations, including Egypt’s Personal Data Protection Law and Saudi Arabia’s PDPL.</p>
+      </div>
     </section>
 
-    <section id="licence">
-      <h2>Licence</h2>
-      <p>Copyright © 2026 Amr Kazzaz. All rights reserved. Nefertiti is proprietary software. It is not open source and is not free software.</p>
-      <p>A person who receives an installer from Amr Kazzaz or from the official download page may install and run that copy. That permission does not include copying, modifying, publishing, distributing, selling or reverse engineering the software, or making derivative works, without prior written permission.</p>
-      <p>The software is provided “as is”, without warranty of any kind. See the <a href="https://github.com/Amrkz/Nefertiti-releases/blob/main/LICENSE">LICENSE</a> file. Third-party components bundled with the app keep their own licences; see <a href="https://github.com/Amrkz/Nefertiti-releases/blob/main/NOTICE">NOTICE</a>.</p>
+    <section class="bande band--paper-high" id="licence">
+      <h2 class="section-titre">Licence</h2>
+      <div class="prose">
+        <p>Copyright © 2026 Amr Kazzaz. All rights reserved. Nefertiti is proprietary software. It is not open source and is not free software.</p>
+        <p>A person who receives an installer from Amr Kazzaz or from the official download page may install and run that copy. That permission does not include copying, modifying, publishing, distributing, selling or reverse engineering the software, or making derivative works, without prior written permission.</p>
+        <p>The software is provided “as is”, without warranty of any kind. See the <a href="https://github.com/Amrkz/Nefertiti-releases/blob/main/LICENSE">LICENSE</a> file. Third-party components bundled with the app keep their own licences; see <a href="https://github.com/Amrkz/Nefertiti-releases/blob/main/NOTICE">NOTICE</a>.</p>
+      </div>
     </section>
 
-    <section id="faq" class="faq">
-      <h2>Frequently asked questions</h2>
+    <section class="bande faq" id="faq">
+      <h2 class="section-titre">Frequently asked questions</h2>
 
       <details>
         <summary>Can I use Nefertiti to make a diagnosis?</summary>
@@ -320,27 +346,89 @@
       </details>
     </section>
 
-    <section id="credits">
-      <h2>About and credits</h2>
-      <p><strong>Created by Dr Amr Kazzaz.</strong> Nefertiti was created and developed by Dr Amr Kazzaz as a desktop DICOM viewer for private specialist clinics, including clinics in Egypt and Saudi Arabia.</p>
-      <p>The viewer is built with a Tauri 2 desktop shell and <a href="https://github.com/cornerstonejs/cornerstone3D">Cornerstone3D</a>. Third-party components keep their own licences, listed in <a href="https://github.com/Amrkz/Nefertiti-releases/blob/main/NOTICE">NOTICE</a>.</p>
-      <p>Copyright © 2026 Amr Kazzaz. All rights reserved.</p>
+    <section class="bande band--paper-high" id="credits">
+      <h2 class="section-titre">About and credits</h2>
+      <div class="prose">
+        <p><strong>Created by Dr Amr Kazzaz.</strong> Nefertiti was created and developed by Dr Amr Kazzaz as a desktop DICOM viewer for private specialist clinics, including clinics in Egypt and Saudi Arabia.</p>
+        <p>The viewer is built with a Tauri 2 desktop shell and <a href="https://github.com/cornerstonejs/cornerstone3D">Cornerstone3D</a>. Third-party components keep their own licences, listed in <a href="https://github.com/Amrkz/Nefertiti-releases/blob/main/NOTICE">NOTICE</a>.</p>
+        <p>Copyright © 2026 Amr Kazzaz. All rights reserved.</p>
+      </div>
     </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Questions, problems and feature requests: open an issue in the <a href="https://github.com/Amrkz/Nefertiti-releases/issues">Issues</a> tab of the download repository.</p>
-      <p><strong>Never attach patient images, names or IDs to an issue.</strong></p>
+    <section class="bande" id="contact">
+      <h2 class="section-titre">Contact</h2>
+      <div class="prose">
+        <p>Questions, problems and feature requests: open an issue in the <a href="https://github.com/Amrkz/Nefertiti-releases/issues">Issues</a> tab of the download repository.</p>
+        <p><strong>Never attach patient images, names or IDs to an issue.</strong></p>
+      </div>
     </section>
   </main>
 
-  <footer class="site">
-    <div class="inner">
-      <p class="by">Created by Dr Amr Kazzaz</p>
-      <p class="copy">© 2026 Amr Kazzaz. All rights reserved.</p>
-      <p class="fine">Nefertiti is for reference only, not for diagnosis. It is not a medical device.</p>
-      <p class="fine"><a href="index.html">English</a> · <a href="ar.html" lang="ar" hreflang="ar">العربية</a> · <a href="https://github.com/Amrkz/Nefertiti-releases">GitHub</a> · <a href="https://github.com/Amrkz/Nefertiti-releases/releases">Releases</a></p>
+  <footer class="foot">
+    <div class="foot__grid">
+      <div>
+        <a class="foot__wm" href="index.html">Nefertiti</a>
+        <p class="by">Created by Dr Amr Kazzaz</p>
+        <p>A desktop DICOM viewer for private specialist clinics.</p>
+        <p>For reference only, not for diagnosis. It is not a medical device.</p>
+      </div>
+      <div>
+        <h3>On this site</h3>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#screenshots">Screenshots</a></li>
+          <li><a href="#download">Download</a></li>
+          <li><a href="#requirements">Requirements</a></li>
+          <li><a href="#roadmap">Roadmap</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Also</h3>
+        <ul>
+          <li><a href="#privacy">Privacy</a></li>
+          <li><a href="#licence">Licence</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#credits">Credits</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="https://github.com/Amrkz/Nefertiti-releases">GitHub</a></li>
+          <li><a href="https://github.com/Amrkz/Nefertiti-releases/releases">Releases</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot__base">
+      <p>© 2026 Amr Kazzaz. All rights reserved.</p>
+      <p><a href="index.html">English</a> · <a href="ar.html" lang="ar" hreflang="ar">العربية</a></p>
     </div>
   </footer>
+
+  <script>
+    (function () {
+      var btn = document.querySelector(".burger");
+      var nav = document.getElementById("nav");
+      if (!btn || !nav) return;
+      function close() {
+        btn.setAttribute("aria-expanded", "false");
+        nav.classList.remove("is-open");
+        document.body.classList.remove("nav-open");
+      }
+      function toggle() {
+        var open = btn.getAttribute("aria-expanded") === "true";
+        if (open) close();
+        else {
+          btn.setAttribute("aria-expanded", "true");
+          nav.classList.add("is-open");
+          document.body.classList.add("nav-open");
+        }
+      }
+      btn.addEventListener("click", toggle);
+      nav.addEventListener("click", function (e) {
+        if (e.target.closest("a")) close();
+      });
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") close();
+      });
+    })();
+  </script>
 </body>
 </html>
