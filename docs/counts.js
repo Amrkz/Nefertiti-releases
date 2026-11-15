@@ -16,6 +16,11 @@
     }
   }
 
+  function numberValue(v) {
+    if (typeof v === "string") v = Number(v);
+    return typeof v === "number" && isFinite(v) ? v : null;
+  }
+
   function render() {
     var parts = [];
     if (typeof visits === "number") parts.push(format(visits) + " " + visitLabel);
@@ -25,15 +30,20 @@
     el.classList.add("is-ready");
   }
 
-  fetch("https://abacus.jasoncameron.dev/hit/amrkz-nefertiti-releases/site-visits")
+  var signal = typeof AbortSignal !== "undefined" && AbortSignal.timeout
+    ? AbortSignal.timeout(8000)
+    : undefined;
+
+  fetch("https://countapi.mileshilliard.com/api/v1/hit/amrkz-nefertiti-releases-site-visits", { signal: signal })
     .then(function (r) { return r.ok ? r.json() : Promise.reject(); })
     .then(function (data) {
-      if (data && typeof data.value === "number") visits = data.value;
+      var n = numberValue(data && data.value);
+      if (n !== null) visits = n;
       render();
     })
     .catch(function () {});
 
-  fetch("https://api.github.com/repos/Amrkz/Nefertiti-releases/releases")
+  fetch("https://api.github.com/repos/Amrkz/Nefertiti-releases/releases", { signal: signal })
     .then(function (r) { return r.ok ? r.json() : Promise.reject(); })
     .then(function (releases) {
       if (!Array.isArray(releases)) return;
