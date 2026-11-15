@@ -981,7 +981,7 @@ td { color: var(--fg-70); }
   color: var(--fg-55);
 }
 .foot__base p { margin: 0; }
-.foot__counts {
+.foot p.foot__counts {
   margin: .85rem 0 0;
   min-height: 1.45em;
   font-size: 11px;
@@ -989,7 +989,7 @@ td { color: var(--fg-70); }
   letter-spacing: .02em;
   color: rgba(236, 232, 227, .25);
 }
-html[lang="ar"] .foot__counts { letter-spacing: 0; }
+html[lang="ar"] .foot p.foot__counts { letter-spacing: 0; }
 
 
 /* Mobile */
