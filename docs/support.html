@@ -6,6 +6,8 @@
   <title>Nefertiti — Support</title>
   <meta name="description" content="Support for Nefertiti, a DICOM viewer for private specialist clinics: how to open a study, the lock and recovery key, and sharing. For reference only, not for diagnosis.">
   <meta name="author" content="Dr Amr Kazzaz">
+  <link rel="preload" href="fonts/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/nwpStKy2OAdR1K-IwhWudF-R3w8aZQ.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="canonical" href="https://amrkz.github.io/Nefertiti-releases/support.html">
@@ -15,9 +17,8 @@
   <header class="masthead">
     <div class="masthead__in">
       <a class="wordmark" href="index.html">Nefertiti</a>
-      <nav class="nav nav--static" aria-label="Support page">
-        <a href="#contact">Contact</a>
-        <a href="#faq">FAQ</a>
+      <nav class="nav nav--static" id="nav" aria-label="Page sections">
+        <a href="#en">English</a>
         <a href="privacy.html">Privacy</a>
         <a class="lang" href="#ar" lang="ar" hreflang="ar">العربية</a>
       </nav>
@@ -25,27 +26,18 @@
   </header>
 
   <main id="main">
-    <section class="bande page-top" id="support">
-      <h1 class="section-titre">Support</h1>
-      <p class="lede">Help for Nefertiti on Windows, Mac, iPhone and iPad.</p>
+    <section class="bande page-top faq" id="en">
+      <h2 class="section-titre">Support</h2>
+      <p class="lede">Help for the Nefertiti app on Windows, Mac, iPhone and iPad.</p>
       <div class="prose">
         <p><strong>For reference only, not for diagnosis.</strong> Nefertiti is not a medical device and has not been cleared or registered by any regulator. Clinical decisions must be made with approved systems and by qualified people, on the original images.</p>
-      </div>
-    </section>
 
-    <section class="bande" id="contact">
-      <h2 class="section-titre">Contact</h2>
-      <div class="prose">
-        <p>Questions, problems and feature requests: open an issue in the <a href="https://github.com/Amrkz/Nefertiti-releases/issues">Issues</a> tab of the Nefertiti download repository.</p>
+        <h3 class="sub-titre" id="contact">Contact</h3>
+        <p>Questions, problems and feature requests: open an issue on <a href="https://github.com/Amrkz/Nefertiti-releases/issues">GitHub</a>. Issues are public, so please do not include patient names, images or any other patient details. Describe the problem in words, or use a test image with no patient data.</p>
         <!-- Support email: none is published yet. The owner adds one here before the App Store submission. -->
-        <p><strong>Never attach patient images, names or IDs to an issue.</strong> Describe the problem in words, or use a test image with no patient data.</p>
+
+        <h3 class="sub-titre" id="faq">Opening a study</h3>
       </div>
-    </section>
-
-    <section class="bande faq" id="faq">
-      <h2 class="section-titre">Frequently asked questions</h2>
-
-      <h3>Opening a study</h3>
       <details>
         <summary>How do I open a study on a computer?</summary>
         <p>Click Import and choose the CD, the USB drive, a folder or a ZIP file. You can also drop a folder on the window, or double-click a DICOM file. Files that are not DICOM are skipped and listed with a reason. The original files are never changed.</p>
@@ -58,8 +50,7 @@
         <summary>A study does not open. What can I try?</summary>
         <p>Check that the files are DICOM (CT, MRI or X-ray images from a scanner, often with no file extension). Try the whole folder rather than one file. A ZIP protected with a password asks for it. Very large studies may be refused on a phone or tablet with little memory. If it still fails, open an issue and describe the message you saw, without patient details.</p>
       </details>
-
-      <h3>The lock and the recovery key</h3>
+      <div class="prose"><h3 class="sub-titre">The lock and the recovery key</h3></div>
       <details>
         <summary>Do I have to set a PIN?</summary>
         <p>No. The library is encrypted on the device either way. A PIN is optional; you can turn it on in Settings → Security. On iPhone and iPad, Face ID can open the library where the device has it, and the PIN always works as the fallback.</p>
@@ -76,8 +67,7 @@
         <summary>I lost the recovery key.</summary>
         <p>While the library is open, go to Settings → Security → Make a new recovery key, and write the new key on paper. The old key stops working for this library. Backups made before that still need the old key, so make a new backup straight away.</p>
       </details>
-
-      <h3>Sharing and export</h3>
+      <div class="prose"><h3 class="sub-titre">Sharing and export</h3></div>
       <details>
         <summary>How do I share images with a colleague or a patient?</summary>
         <p>Use Share to make a PDF of the study, a one-page key-image report, a picture grid, or a short video that scrolls through a series. On iPhone and iPad this opens the system share sheet, where you can save to Files or send with an app you choose. Every file carries the line “for reference only, not for diagnosis”.</p>
@@ -90,15 +80,18 @@
         <summary>Does anything leave my device by itself?</summary>
         <p>No. Nefertiti works offline: no account, no network calls, no analytics. A copy leaves the device only when you share or export it, and only to the place you choose. See the <a href="privacy.html">privacy policy</a>.</p>
       </details>
+      <div class="prose">
+        <h3 class="sub-titre">Privacy</h3>
+        <p>The app collects nothing and makes no network calls. Read the <a href="privacy.html">privacy policy</a>.</p>
+      </div>
     </section>
 
-    <section class="bande" id="ar" lang="ar" dir="rtl">
+    <section class="bande band--paper-high faq" id="ar" lang="ar" dir="rtl">
       <h2 class="section-titre">الدعم</h2>
       <div class="prose">
         <p><strong>للاستئناس فقط، وليس للتشخيص.</strong> نفرتيتي ليس جهازًا طبيًا، ولم يُعتمد أو يُسجَّل لدى أي جهة تنظيمية. يجب اتخاذ القرارات السريرية بأنظمة معتمدة وعلى يد أشخاص مؤهلين، وعلى الصور الأصلية.</p>
         <p><strong>التواصل:</strong> للأسئلة والمشكلات واقتراحات الميزات، افتح بلاغًا في تبويب <a href="https://github.com/Amrkz/Nefertiti-releases/issues">Issues</a> لمستودع التنزيل. <strong>لا ترفق أبدًا صور مرضى أو أسماءهم أو أرقام هوياتهم بأي بلاغ.</strong></p>
       </div>
-      <div class="faq">
         <details>
           <summary>كيف أفتح دراسة على الحاسوب؟</summary>
           <p>اضغط «استيراد» واختر القرص أو ذاكرة USB أو مجلدًا أو ملف ZIP. ويمكنك أيضًا إسقاط مجلد على النافذة أو النقر مرتين على ملف DICOM. الملفات التي ليست DICOM تُتخطّى مع ذكر السبب، ولا تتغير الملفات الأصلية أبدًا.</p>
@@ -127,6 +120,9 @@
           <summary>هل يغادر شيء جهازي من تلقاء نفسه؟</summary>
           <p>لا. يعمل نفرتيتي دون اتصال: لا حساب، ولا اتصالات شبكية، ولا تحليلات. تغادر النسخة الجهاز فقط عندما تشاركها أو تصدّرها، وإلى المكان الذي تختاره. راجع <a href="privacy.html">سياسة الخصوصية</a>.</p>
         </details>
+      <div class="prose">
+        <h3 class="sub-titre">الخصوصية</h3>
+        <p>لا يجمع التطبيق أي بيانات ولا يتصل بالشبكة. اقرأ <a href="privacy.html">سياسة الخصوصية</a>.</p>
       </div>
     </section>
   </main>
@@ -134,7 +130,7 @@
   <footer class="foot">
     <div class="foot__base">
       <p>© 2026 Amr Kazzaz. All rights reserved. For reference only, not for diagnosis.</p>
-      <p><a href="index.html">Home</a> · <a href="privacy.html">Privacy</a> · <a href="ar.html" lang="ar" hreflang="ar">العربية</a></p>
+      <p><a href="index.html">English</a> · <a href="ar.html" lang="ar" hreflang="ar">العربية</a> · <a href="privacy.html">Privacy</a></p>
     </div>
   </footer>
 </body>

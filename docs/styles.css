@@ -1097,5 +1097,4 @@ html[lang="ar"] .foot__wm {
   }
   .nav.nav--static a { width: auto; padding-block: .5rem; border-bottom: 0; }
 }
-.faq h3 { margin: 2rem 0 .5rem; font-family: var(--serif); font-weight: 500; color: var(--fg-70); }
 .bande.page-top { padding-top: calc(var(--head) + 2.5rem); }
