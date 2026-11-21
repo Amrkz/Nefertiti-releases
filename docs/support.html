@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nefertiti — Support</title>
+  <meta name="description" content="Support for Nefertiti, a DICOM viewer for private specialist clinics: how to open a study, the lock and recovery key, and sharing. For reference only, not for diagnosis.">
+  <meta name="author" content="Dr Amr Kazzaz">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://amrkz.github.io/Nefertiti-releases/support.html">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="masthead">
+    <div class="masthead__in">
+      <a class="wordmark" href="index.html">Nefertiti</a>
+      <nav class="nav nav--static" aria-label="Support page">
+        <a href="#contact">Contact</a>
+        <a href="#faq">FAQ</a>
+        <a href="privacy.html">Privacy</a>
+        <a class="lang" href="#ar" lang="ar" hreflang="ar">العربية</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="bande page-top" id="support">
+      <h1 class="section-titre">Support</h1>
+      <p class="lede">Help for Nefertiti on Windows, Mac, iPhone and iPad.</p>
+      <div class="prose">
+        <p><strong>For reference only, not for diagnosis.</strong> Nefertiti is not a medical device and has not been cleared or registered by any regulator. Clinical decisions must be made with approved systems and by qualified people, on the original images.</p>
+      </div>
+    </section>
+
+    <section class="bande" id="contact">
+      <h2 class="section-titre">Contact</h2>
+      <div class="prose">
+        <p>Questions, problems and feature requests: open an issue in the <a href="https://github.com/Amrkz/Nefertiti-releases/issues">Issues</a> tab of the Nefertiti download repository.</p>
+        <!-- Support email: none is published yet. The owner adds one here before the App Store submission. -->
+        <p><strong>Never attach patient images, names or IDs to an issue.</strong> Describe the problem in words, or use a test image with no patient data.</p>
+      </div>
+    </section>
+
+    <section class="bande faq" id="faq">
+      <h2 class="section-titre">Frequently asked questions</h2>
+
+      <h3>Opening a study</h3>
+      <details>
+        <summary>How do I open a study on a computer?</summary>
+        <p>Click Import and choose the CD, the USB drive, a folder or a ZIP file. You can also drop a folder on the window, or double-click a DICOM file. Files that are not DICOM are skipped and listed with a reason. The original files are never changed.</p>
+      </details>
+      <details>
+        <summary>How do I open a study on iPhone or iPad?</summary>
+        <p>In Nefertiti tap Import, then choose files, a folder or a ZIP file from the Files app. You can also use Share or Open In from Files, Mail or AirDrop and pick Nefertiti. On an iPad, a USB-C drive shows up in the Files app. Each study is copied into the private library in the app.</p>
+      </details>
+      <details>
+        <summary>A study does not open. What can I try?</summary>
+        <p>Check that the files are DICOM (CT, MRI or X-ray images from a scanner, often with no file extension). Try the whole folder rather than one file. A ZIP protected with a password asks for it. Very large studies may be refused on a phone or tablet with little memory. If it still fails, open an issue and describe the message you saw, without patient details.</p>
+      </details>
+
+      <h3>The lock and the recovery key</h3>
+      <details>
+        <summary>Do I have to set a PIN?</summary>
+        <p>No. The library is encrypted on the device either way. A PIN is optional; you can turn it on in Settings → Security. On iPhone and iPad, Face ID can open the library where the device has it, and the PIN always works as the fallback.</p>
+      </details>
+      <details>
+        <summary>What is the recovery key?</summary>
+        <p>A key shown once when you set up the library. Write it on paper and keep it safe; do not put it in a file, a chat or an email. It is the only way back in if you forget the PIN, or if the device key is lost, for example after reinstalling.</p>
+      </details>
+      <details>
+        <summary>I forgot my PIN.</summary>
+        <p>Type the recovery key in the PIN box and open the library; the app then asks for a new PIN. Without the recovery key a locked library cannot be opened, and nobody, including us, can open it for you.</p>
+      </details>
+      <details>
+        <summary>I lost the recovery key.</summary>
+        <p>While the library is open, go to Settings → Security → Make a new recovery key, and write the new key on paper. The old key stops working for this library. Backups made before that still need the old key, so make a new backup straight away.</p>
+      </details>
+
+      <h3>Sharing and export</h3>
+      <details>
+        <summary>How do I share images with a colleague or a patient?</summary>
+        <p>Use Share to make a PDF of the study, a one-page key-image report, a picture grid, or a short video that scrolls through a series. On iPhone and iPad this opens the system share sheet, where you can save to Files or send with an app you choose. Every file carries the line “for reference only, not for diagnosis”.</p>
+      </details>
+      <details>
+        <summary>Are names removed from shared files?</summary>
+        <p>Yes, by default. Patient details appear only if you tick “Include patient details”. Check what you send before you send it.</p>
+      </details>
+      <details>
+        <summary>Does anything leave my device by itself?</summary>
+        <p>No. Nefertiti works offline: no account, no network calls, no analytics. A copy leaves the device only when you share or export it, and only to the place you choose. See the <a href="privacy.html">privacy policy</a>.</p>
+      </details>
+    </section>
+
+    <section class="bande" id="ar" lang="ar" dir="rtl">
+      <h2 class="section-titre">الدعم</h2>
+      <div class="prose">
+        <p><strong>للاستئناس فقط، وليس للتشخيص.</strong> نفرتيتي ليس جهازًا طبيًا، ولم يُعتمد أو يُسجَّل لدى أي جهة تنظيمية. يجب اتخاذ القرارات السريرية بأنظمة معتمدة وعلى يد أشخاص مؤهلين، وعلى الصور الأصلية.</p>
+        <p><strong>التواصل:</strong> للأسئلة والمشكلات واقتراحات الميزات، افتح بلاغًا في تبويب <a href="https://github.com/Amrkz/Nefertiti-releases/issues">Issues</a> لمستودع التنزيل. <strong>لا ترفق أبدًا صور مرضى أو أسماءهم أو أرقام هوياتهم بأي بلاغ.</strong></p>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>كيف أفتح دراسة على الحاسوب؟</summary>
+          <p>اضغط «استيراد» واختر القرص أو ذاكرة USB أو مجلدًا أو ملف ZIP. ويمكنك أيضًا إسقاط مجلد على النافذة أو النقر مرتين على ملف DICOM. الملفات التي ليست DICOM تُتخطّى مع ذكر السبب، ولا تتغير الملفات الأصلية أبدًا.</p>
+        </details>
+        <details>
+          <summary>كيف أفتح دراسة على iPhone أو iPad؟</summary>
+          <p>اضغط «استيراد» في نفرتيتي، ثم اختر ملفات أو مجلدًا أو ملف ZIP من تطبيق «الملفات». ويمكنك أيضًا استخدام «مشاركة» أو «فتح في» من «الملفات» أو «البريد» أو AirDrop واختيار نفرتيتي. على iPad تظهر ذاكرة USB-C في تطبيق «الملفات». تُنسخ كل دراسة إلى المكتبة الخاصة داخل التطبيق.</p>
+        </details>
+        <details>
+          <summary>هل يجب أن أضع رمز PIN؟</summary>
+          <p>لا. المكتبة مشفّرة على الجهاز في كل الأحوال. رمز PIN اختياري ويمكن تفعيله من Settings → Security. على iPhone وiPad يمكن فتح المكتبة بـ Face ID إن توفّر في الجهاز، ويبقى رمز PIN متاحًا دائمًا بديلًا.</p>
+        </details>
+        <details>
+          <summary>ما مفتاح الاسترداد؟</summary>
+          <p>مفتاح يظهر مرة واحدة عند إعداد المكتبة. اكتبه على ورقة واحفظه في مكان آمن، ولا تضعه في ملف أو محادثة أو بريد. هو الطريق الوحيد للدخول إذا نسيت رمز PIN أو ضاع مفتاح الجهاز، مثلًا بعد إعادة التثبيت. من دونه لا يمكن فتح مكتبة مقفلة، ولا نستطيع نحن فتحها لك.</p>
+        </details>
+        <details>
+          <summary>ضاع مفتاح الاسترداد؟</summary>
+          <p>والمكتبة مفتوحة، اذهب إلى Settings → Security → Make a new recovery key واكتب المفتاح الجديد على ورقة. يتوقف المفتاح القديم عن العمل لهذه المكتبة. النسخ الاحتياطية التي صُنعت قبل ذلك ما زالت تحتاج المفتاح القديم، لذا اصنع نسخة احتياطية جديدة فورًا.</p>
+        </details>
+        <details>
+          <summary>كيف أشارك الصور؟</summary>
+          <p>استخدم «مشاركة» لصنع ملف PDF للدراسة، أو تقرير صفحة واحدة بالصور الأساسية، أو شبكة صور، أو مقطع فيديو قصير يمرّ عبر سلسلة. على iPhone وiPad تُفتح ورقة المشاركة في النظام، فتحفظ في «الملفات» أو ترسل بالتطبيق الذي تختاره. تُنزع أسماء المرضى افتراضيًا، ولا تظهر إلا إذا اخترت «Include patient details». يحمل كل ملف عبارة «للاستئناس فقط، وليس للتشخيص».</p>
+        </details>
+        <details>
+          <summary>هل يغادر شيء جهازي من تلقاء نفسه؟</summary>
+          <p>لا. يعمل نفرتيتي دون اتصال: لا حساب، ولا اتصالات شبكية، ولا تحليلات. تغادر النسخة الجهاز فقط عندما تشاركها أو تصدّرها، وإلى المكان الذي تختاره. راجع <a href="privacy.html">سياسة الخصوصية</a>.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="foot__base">
+      <p>© 2026 Amr Kazzaz. All rights reserved. For reference only, not for diagnosis.</p>
+      <p><a href="index.html">Home</a> · <a href="privacy.html">Privacy</a> · <a href="ar.html" lang="ar" hreflang="ar">العربية</a></p>
+    </div>
+  </footer>
+</body>
+</html>
