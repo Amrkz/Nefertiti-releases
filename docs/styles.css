@@ -1079,3 +1079,22 @@ html[lang="ar"] .foot__wm {
   }
   .btn:hover, .btn:focus-visible { transform: none; }
 }
+
+/* Support and privacy pages: a short nav that stays visible with no menu button. */
+@media (max-width: 880px) {
+  .nav.nav--static {
+    position: static;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: .25rem 1rem;
+    background: none;
+    border: 0;
+    padding: 0;
+    max-height: none;
+    transform: none;
+    opacity: 1;
+    visibility: visible;
+  }
+  .nav.nav--static a { width: auto; padding-block: .5rem; border-bottom: 0; }
+}
+.bande.page-top { padding-top: calc(var(--head) + 2.5rem); }
