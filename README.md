@@ -8,7 +8,7 @@ This repository holds **installers only**. **The source code is proprietary and 
 
 ## Website
 
-The project site, in English and Arabic, is at [https://amrkz.github.io/Nefertiti-releases/](https://amrkz.github.io/Nefertiti-releases/). Arabic: [https://amrkz.github.io/Nefertiti-releases/ar.html](https://amrkz.github.io/Nefertiti-releases/ar.html).
+The project site, in English and Arabic, is at [https://amrkz.github.io/Nefertiti-releases/](https://amrkz.github.io/Nefertiti-releases/). Arabic: [https://amrkz.github.io/Nefertiti-releases/ar.html](https://amrkz.github.io/Nefertiti-releases/ar.html). The favicon is the approved Nefertiti app icon (`docs/favicon.svg`), with a 32×32 PNG fallback and an 180×180 Apple touch icon on the paper background.
 
 ## Supported systems
 
@@ -68,7 +68,7 @@ Questions, problems and feature requests: open an issue in the [Issues](../../is
 
 ### الموقع
 
-موقع المشروع، بالإنجليزية والعربية: [https://amrkz.github.io/Nefertiti-releases/](https://amrkz.github.io/Nefertiti-releases/). النسخة العربية: [https://amrkz.github.io/Nefertiti-releases/ar.html](https://amrkz.github.io/Nefertiti-releases/ar.html).
+موقع المشروع، بالإنجليزية والعربية: [https://amrkz.github.io/Nefertiti-releases/](https://amrkz.github.io/Nefertiti-releases/). النسخة العربية: [https://amrkz.github.io/Nefertiti-releases/ar.html](https://amrkz.github.io/Nefertiti-releases/ar.html). أيقونة الموقع هي أيقونة تطبيق نفرتيتي المعتمدة (`docs/favicon.svg`)، مع نسخة PNG بمقاس 32×32 وأيقونة Apple touch بمقاس 180×180 على الخلفية الورقية.
 
 ### الأنظمة المدعومة
 
