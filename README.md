@@ -1,5 +1,7 @@
 # Nefertiti — downloads
 
+[![Privacy: data not collected](docs/badges/privacy.svg)](https://amrkz.github.io/Nefertiti-releases/privacy.html)
+
 Nefertiti is a desktop DICOM viewer for CT, MRI and X-ray images, made for private specialist clinics. It opens the CD or USB a patient brings, keeps a private encrypted library on the computer, and lets you view, measure and compare studies. It works offline: no network calls, no telemetry.
 
 > **For reference only, not for diagnosis.** Nefertiti is not a medical device and has not been cleared or registered by any regulator (including the EDA in Egypt or the SFDA in Saudi Arabia).
